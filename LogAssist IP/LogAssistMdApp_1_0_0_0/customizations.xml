@@ -1,0 +1,158 @@
+<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Entities></Entities>
+  <Roles></Roles>
+  <Workflows></Workflows>
+  <FieldSecurityProfiles></FieldSecurityProfiles>
+  <Templates />
+  <EntityMaps />
+  <EntityRelationships />
+  <OrganizationSettings />
+  <optionsets />
+  <WebResources>
+    <WebResource>
+      <WebResourceId>{42f924a2-0aab-ea11-a812-000d3a23cb53}</WebResourceId>
+      <Name>mfc2t_logoratp</Name>
+      <DisplayName>Logo RATP</DisplayName>
+      <WebResourceType>5</WebResourceType>
+      <IntroducedVersion>1.0.1.0</IntroducedVersion>
+      <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+      <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+      <DependencyXml>&lt;Dependencies&gt;&lt;Dependency componentType="WebResource"/&gt;&lt;/Dependencies&gt;</DependencyXml>
+      <IsCustomizable>1</IsCustomizable>
+      <CanBeDeleted>1</CanBeDeleted>
+      <IsHidden>0</IsHidden>
+      <FileName>/WebResources/mfc2t_logoratp42F924A2-0AAB-EA11-A812-000D3A23CB53</FileName>
+    </WebResource>
+  </WebResources>
+  <CustomControls />
+  <AppModuleSiteMaps>
+    <AppModuleSiteMap>
+      <SiteMapUniqueName>mfc2t_Geloc</SiteMapUniqueName>
+      <SiteMap IntroducedVersion="7.0.0.0">
+        <Area Id="NewArea_192627e1" ResourceId="SitemapDesigner.NewArea" VectorIcon="/WebResources/AppCommon/ControlWS/HeaderIconImages/AdvancedSettings_HC.svg" Icon="/WebResources/AppCommon/ControlWS/HeaderIconImages/AdvancedSettings_HC.svg" ShowGroups="false">
+          <Titles>
+            <Title LCID="1036" Title="Admin" />
+          </Titles>
+          <Group Id="NewGroup_2aae7cd8" ResourceId="SitemapDesigner.NewGroup" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+            <Titles>
+              <Title LCID="1033" Title="Referentials" />
+              <Title LCID="1036" Title="Logistique" />
+            </Titles>
+            <SubArea Id="NewSubArea_5084564b" VectorIcon="/WebResources/mfc2t_/Icons/Entities/City.svg" Icon="/WebResources/mfc2t_/Icons/Entities/City.svg" Entity="account" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+              <Titles>
+                <Title LCID="1036" Title="Bénéficiaires" />
+              </Titles>
+            </SubArea>
+            <SubArea Id="NewSubArea_24152646" Entity="mfc2t_product" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+            <SubArea Id="NewSubArea_557abe7" Entity="mfc2t_rule" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+            <SubArea Id="NewSubArea_3687de0c" Entity="mfc2t_deliverywave" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+            <SubArea Id="NewSubArea_19b82012" Entity="mfc2t_deliverywaveline" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+            <SubArea Id="NewSubArea_cdfb3b07" Entity="mfc2t_deliverywavegroup" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+          </Group>
+          <Group Id="NewGroup_1a5d2b54" ResourceId="SitemapDesigner.NewGroup" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+            <Titles>
+              <Title LCID="1033" Title="Security" />
+              <Title LCID="1036" Title="Sécurité" />
+            </Titles>
+            <SubArea Id="NewSubArea_98137d35" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="businessunit" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+            <SubArea Id="NewSubArea_00d9ffc2" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="systemuser" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+            <SubArea Id="NewSubArea_1a249854" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="team" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+            <SubArea Id="NewSubArea_8f6a79c5" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="role" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+            <SubArea Id="NewSubArea_b1be9152" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="fieldsecurityprofile" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+          </Group>
+          <Group Id="NewGroup_45a924e9" ResourceId="SitemapDesigner.NewGroup" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+            <Titles>
+              <Title LCID="1036" Title="Logs Moteurs de calcul" />
+            </Titles>
+            <SubArea Id="NewSubArea_330526f2" Entity="mfc2t_calculationjob" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+          </Group>
+        </Area>
+        <Area Id="New_Area" ResourceId="SitemapDesigner.NewArea" DescriptionResourceId="SitemapDesigner.NewArea" VectorIcon="/WebResources/mfc2t_/Icons/Entities/PBI.svg" Icon="/WebResources/mfc2t_/Icons/Entities/PBI.svg" ShowGroups="true" IntroducedVersion="7.0.0.0">
+          <Titles>
+            <Title LCID="1036" Title="Référentiels" />
+          </Titles>
+          <Group Id="New_Group" ResourceId="SitemapDesigner.NewGroup" DescriptionResourceId="SitemapDesigner.NewGroup" IntroducedVersion="7.0.0.0" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+            <Titles>
+              <Title LCID="1033" Title="Field Info" />
+              <Title LCID="1036" Title="Bénéficiaires" />
+            </Titles>
+            <SubArea Id="New_SubArea" Icon="/_imgs/imagestrips/transparent_spacer.gif" IntroducedVersion="7.0.0.0" Entity="account" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+              <Titles>
+                <Title LCID="1036" Title="Bénéficiaires" />
+              </Titles>
+            </SubArea>
+          </Group>
+          <Group Id="NewGroup_4e683e1c" ResourceId="SitemapDesigner.NewGroup" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+            <Titles>
+              <Title LCID="1033" Title="Delivery" />
+              <Title LCID="1036" Title="Logistique" />
+            </Titles>
+            <SubArea Id="NewSubArea_57c80c76" Entity="mfc2t_deliverywaveline" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+            <SubArea Id="NewSubArea_a6bf8811" Entity="mfc2t_deliverywavegroup" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+          </Group>
+        </Area>
+      </SiteMap>
+      <LocalizedNames>
+        <LocalizedName description="AideLog" languagecode="1036" />
+      </LocalizedNames>
+    </AppModuleSiteMap>
+  </AppModuleSiteMaps>
+  <AppModules>
+    <AppModule>
+      <UniqueName>mfc2t_Geloc</UniqueName>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <WebResourceId>953b9fac-1e5e-e611-80d6-00155ded156f</WebResourceId>
+      <OptimizedFor></OptimizedFor>
+      <FormFactor>1</FormFactor>
+      <ClientType>4</ClientType>
+      <NavigationType>0</NavigationType>
+      <AppModuleComponents>
+        <AppModuleComponent type="62" schemaName="mfc2t_Geloc" />
+        <AppModuleComponent type="1" schemaName="account" />
+        <AppModuleComponent type="60" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
+        <AppModuleComponent type="60" id="{40081708-a2a4-4c5f-b36a-a52e0c1f11c0}" />
+        <AppModuleComponent type="60" id="{b028db32-3619-48a5-ac51-cf3f947b0ef3}" />
+        <AppModuleComponent type="60" id="{c9e7ec2d-efca-4e4c-b3e3-f63c4bba5e4b}" />
+        <AppModuleComponent type="60" id="{69cff312-cfb6-4289-9631-249ab85d2c62}" />
+        <AppModuleComponent type="60" id="{2205c86d-ed88-4a2f-a447-3b86a8781f2e}" />
+        <AppModuleComponent type="60" id="{098ae145-1567-41ec-8398-86dbaac70c9b}" />
+        <AppModuleComponent type="26" id="{fcd0017d-8675-ea11-a811-000d3a20f3f8}" />
+        <AppModuleComponent type="26" id="{65ffaf9a-e8c5-432d-860b-32f841b00d87}" />
+        <AppModuleComponent type="26" id="{d46a9c29-96b1-ea11-a812-000d3a24e4ce}" />
+        <AppModuleComponent type="26" id="{00000000-0000-0000-00aa-000010001200}" />
+        <AppModuleComponent type="26" id="{59e57080-0cc2-e211-9b83-00155d89b902}" />
+        <AppModuleComponent type="26" id="{38a21ffb-4e32-4038-beb9-03172a0dd034}" />
+        <AppModuleComponent type="26" id="{00000000-0000-0000-00aa-000000666000}" />
+        <AppModuleComponent type="26" id="{a9af0ab8-861d-4cfa-92a5-c6281fed7fab}" />
+        <AppModuleComponent type="1" schemaName="businessunit" />
+        <AppModuleComponent type="1" schemaName="mfc2t_rule" />
+        <AppModuleComponent type="1" schemaName="team" />
+        <AppModuleComponent type="1" schemaName="mfc2t_deliverywaveline" />
+        <AppModuleComponent type="26" id="{c20d215f-17b0-4d19-ad1e-07f89b350bec}" />
+        <AppModuleComponent type="26" id="{5383d945-6f79-ea11-a811-000d3a20f8d4}" />
+        <AppModuleComponent type="26" id="{d75ba00d-1671-ea11-a811-000d3a2109c9}" />
+        <AppModuleComponent type="1" schemaName="mfc2t_deliverywavegroup" />
+        <AppModuleComponent type="1" schemaName="mfc2t_settings" />
+        <AppModuleComponent type="1" schemaName="mfc2t_calculationjob" />
+        <AppModuleComponent type="1" schemaName="mfc2t_product" />
+        <AppModuleComponent type="1" schemaName="fieldsecurityprofile" />
+        <AppModuleComponent type="1" schemaName="role" />
+        <AppModuleComponent type="1" schemaName="systemuser" />
+        <AppModuleComponent type="1" schemaName="mfc2t_deliverywave" />
+      </AppModuleComponents>
+      <AppModuleRoleMaps>
+        <Role id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+        <Role id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role id="{2d101bb3-5ced-4122-83f1-94d5efde4e3b}" />
+        <Role id="{378923af-d671-ea11-a811-000d3a20f8d4}" />
+      </AppModuleRoleMaps>
+      <LocalizedNames>
+        <LocalizedName description="DOTEO" languagecode="1036" />
+      </LocalizedNames>
+    </AppModule>
+  </AppModules>
+  <EntityDataProviders />
+  <Languages>
+    <Language>1036</Language>
+  </Languages>
+</ImportExportXml>

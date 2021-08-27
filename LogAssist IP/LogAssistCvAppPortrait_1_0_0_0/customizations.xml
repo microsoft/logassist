@@ -1,0 +1,44 @@
+<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Entities></Entities>
+  <Roles></Roles>
+  <Workflows></Workflows>
+  <FieldSecurityProfiles></FieldSecurityProfiles>
+  <Templates />
+  <EntityMaps />
+  <EntityRelationships />
+  <OrganizationSettings />
+  <optionsets />
+  <CustomControls />
+  <EntityDataProviders />
+  <CanvasApps>
+    <CanvasApp>
+      <Name>mfc2t_logassistratp_3f916</Name>
+      <AppVersion>2020-06-17T17:59:39Z</AppVersion>
+      <Status>Ready</Status>
+      <CreatedByClientVersion>3.20061.27.0</CreatedByClientVersion>
+      <MinClientVersion>3.20061.27.0</MinClientVersion>
+      <Tags>{"primaryDeviceWidth":"768","primaryDeviceHeight":"1366","sienaVersion":"20200617T175939Z-3.20061.27.0","deviceCapabilities":"","supportsPortrait":"true","supportsLandscape":"false","primaryFormFactor":"Tablet","publisherVersion":"3.20061.27","minimumRequiredApiVersion":"2.2.0","hasComponent":"true","hasUnlockedComponent":"true","isUnifiedRootApp":"false"}</Tags>
+      <IsCdsUpgraded>0</IsCdsUpgraded>
+      <GalleryItemId xsi:nil="true"></GalleryItemId>
+      <BackgroundColor>rgba(175, 229, 178, 1)</BackgroundColor>
+      <DisplayName>DOTEO - Distribution</DisplayName>
+      <Description>Application à destination des agents d'encadrement</Description>
+      <CommitMessage xsi:nil="true"></CommitMessage>
+      <Publisher xsi:nil="true"></Publisher>
+      <AuthorizationReferences xsi:nil="true"></AuthorizationReferences>
+      <ConnectionReferences>{}</ConnectionReferences>
+      <DatabaseReferences>{"default.cds":{"databaseDetails":{"referenceType":"Environmental","environmentName":"default.cds"},"dataSources":{"Etablissements":{"entitySetName":"accounts","logicalName":"account"},"Produits":{"entitySetName":"mfc2t_products","logicalName":"mfc2t_product"},"Vagues de livraison":{"entitySetName":"mfc2t_deliverywaves","logicalName":"mfc2t_deliverywave"},"Lignes Plateformes":{"entitySetName":"mfc2t_deliverywavegroups","logicalName":"mfc2t_deliverywavegroup"},"Paramètres":{"entitySetName":"mfc2t_settingses","logicalName":"mfc2t_settings"},"Lignes Etablissements":{"entitySetName":"mfc2t_deliverywavelines","logicalName":"mfc2t_deliverywaveline"},"Utilisateurs":{"entitySetName":"systemusers","logicalName":"systemuser"},"Équipes":{"entitySetName":"teams","logicalName":"team"},"Divisions":{"entitySetName":"businessunits","logicalName":"businessunit"},"Actions de distribution unitaires":{"entitySetName":"mfc2t_distributions","logicalName":"mfc2t_distribution"}}}}</DatabaseReferences>
+      <CanvasAppType>0</CanvasAppType>
+      <BypassConsent>0</BypassConsent>
+      <AdminControlBypassConsent>0</AdminControlBypassConsent>
+      <EmbeddedApp xsi:nil="true"></EmbeddedApp>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <CdsDependencies>{"cdsdependencies":[{"logicalname":"account","componenttype":1},{"logicalname":"mfc2t_product","componenttype":1},{"logicalname":"mfc2t_deliverywave","componenttype":1},{"logicalname":"mfc2t_deliverywavegroup","componenttype":1},{"logicalname":"mfc2t_settings","componenttype":1},{"logicalname":"mfc2t_deliverywaveline","componenttype":1},{"logicalname":"systemuser","componenttype":1},{"logicalname":"team","componenttype":1},{"logicalname":"businessunit","componenttype":1},{"logicalname":"mfc2t_distribution","componenttype":1}]}</CdsDependencies>
+      <BackgroundImageUri>/CanvasApps/mfc2t_logassistratp_3f916_BackgroundImageUri</BackgroundImageUri>
+      <DocumentUri>/CanvasApps/mfc2t_logassistratp_3f916_DocumentUri.msapp</DocumentUri>
+    </CanvasApp>
+  </CanvasApps>
+  <Languages>
+    <Language>1036</Language>
+  </Languages>
+</ImportExportXml>

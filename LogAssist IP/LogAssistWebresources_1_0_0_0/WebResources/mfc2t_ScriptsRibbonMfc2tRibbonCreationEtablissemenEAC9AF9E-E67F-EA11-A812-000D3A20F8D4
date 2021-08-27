@@ -1,0 +1,44 @@
+if (typeof Mfc2t === "undefined") {
+    Mfc2t = { __namespace: true };
+}
+
+if (typeof Mfc2t.Ribbon === "undefined") {
+    Mfc2t.Ribbon = { __namespace: true };
+}
+
+Mfc2t.Ribbon.CreationEtablissement = new (function () {
+
+ /// <summary>
+ ///  Define if it's approved or not
+ /// </summary>
+
+    this.isApproved = {
+       Yes: true,
+       No: false,
+    };
+
+
+ /// <summary>
+ ///  Start the approval of the incident
+ /// </summary>
+    this.Approve = function (executionContext) {
+
+        var confirmStrings = { text: "Etes-vous sûr de vouloir approuver cette demande ?\n L'établissement serait alors créé dans la base des établissements.", title: "Confirmation", cancelButtonLabel: "Annuler", confirmButtonLabel: "Confirmer" };
+        var confirmOptions = { height: 200, width: 450 };
+        Xrm.Navigation.openConfirmDialog(confirmStrings, confirmOptions).then(
+            function (success) {
+                if (success.confirmed) {
+                    
+                    var ApprovedAttr = executionContext.getAttribute("mfc2t_approved");
+                    ApprovedAttr.setValue(Mfc2t.Ribbon.CreationEtablissement.isApproved.Yes); 
+                    ApprovedAttr.setSubmitMode("always");
+
+                    var saveOptions = { saveMode: 1 };
+                    executionContext.data.save(saveOptions);
+                    
+
+                } else {
+                    // Do nothing
+                }
+            });
+    }});

@@ -1,0 +1,150 @@
+<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Entities>
+    <Entity>
+      <Name LocalizedName="Personne" OriginalName="">Contact</Name>
+      <EntityInfo>
+        <entity Name="Contact">
+          <attributes>
+            <attribute PhysicalName="mfc2t_applogin">
+              <Type>nvarchar</Type>
+              <Name>mfc2t_applogin</Name>
+              <LogicalName>mfc2t_applogin</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>1</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0.0.1</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <Format>email</Format>
+              <MaxLength>500</MaxLength>
+              <Length>1000</Length>
+              <displaynames>
+                <displayname description="Login AideLog" languagecode="1036" />
+              </displaynames>
+              <Descriptions>
+                <Description description="" languagecode="1036" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="mfc2t_temporarypassword">
+              <Type>nvarchar</Type>
+              <Name>mfc2t_temporarypassword</Name>
+              <LogicalName>mfc2t_temporarypassword</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>1</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0.0.1</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <Format>text</Format>
+              <MaxLength>100</MaxLength>
+              <Length>200</Length>
+              <displaynames>
+                <displayname description="Mot de passe Temporaire" languagecode="1036" />
+              </displaynames>
+              <Descriptions>
+                <Description description="" languagecode="1036" />
+              </Descriptions>
+            </attribute>
+          </attributes>
+        </entity>
+      </EntityInfo>
+      <RibbonDiffXml>
+        <CustomActions />
+        <Templates>
+          <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+        </Templates>
+        <CommandDefinitions />
+        <RuleDefinitions>
+          <TabDisplayRules />
+          <DisplayRules />
+          <EnableRules />
+        </RuleDefinitions>
+        <LocLabels />
+      </RibbonDiffXml>
+    </Entity>
+  </Entities>
+  <Roles></Roles>
+  <Workflows></Workflows>
+  <FieldSecurityProfiles></FieldSecurityProfiles>
+  <Templates>
+    <EmailTemplates>
+      <emailtemplate>
+        <templateid>{a0349a9d-334b-49fb-b173-77efa1607b97}</templateid>
+        <subject>&lt;?xml version="1.0" ?&gt;&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"&gt;&lt;xsl:output method="text" indent="no"/&gt;&lt;xsl:template match="/data"&gt;&lt;![CDATA[Doteo: Votre enregistrement]]&gt;&lt;/xsl:template&gt;&lt;/xsl:stylesheet&gt;</subject>
+        <subjectpresentationxml>&lt;template&gt;&lt;text&gt;&lt;![CDATA[Doteo: Votre enregistrement]]&gt;&lt;/text&gt;&lt;/template&gt;</subjectpresentationxml>
+        <mimetype></mimetype>
+        <templatetypecode>2</templatetypecode>
+        <body>&lt;?xml version="1.0" ?&gt;&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"&gt;&lt;xsl:output method="text" indent="no"/&gt;&lt;xsl:template match="/data"&gt;&lt;![CDATA[&lt;p class=""&gt;&lt;font face=Arial&gt;Bonjour ]]&gt;&lt;xsl:choose&gt;&lt;xsl:when test="contact/fullname"&gt;&lt;xsl:value-of select="contact/fullname" /&gt;&lt;/xsl:when&gt;&lt;xsl:otherwise&gt;&lt;/xsl:otherwise&gt;&lt;/xsl:choose&gt;&lt;![CDATA[ ,&lt;/font&gt;&lt;/p&gt;
+&lt;p class=keyboardFocusClass&gt;&lt;font face=Arial&gt;Bienvenue sur l'application Doteo.&amp;#160;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=Arial&gt;Vous trouverez ci-dessous vos informations de connexion :&lt;/font&gt;&lt;/p&gt;&lt;ul class="RTE_list_style_position keyboardFocusClass"&gt;&lt;li class=""&gt;&lt;font face=Arial&gt;Lien de connexion:&lt;/font&gt;&amp;#160;&lt;font face=Arial&gt;&lt;b&gt;&lt;a href="https://aidelog01.crm4.dynamics.com/apps/aidelog"&gt;https://doteo.crm4.dynamics.com/apps/doteo&lt;/a&gt;&lt;/b&gt;&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font face=Arial&gt;Votre Login:&lt;/font&gt; &lt;b class=""&gt;&lt;font face="Courier New"&gt;]]&gt;&lt;xsl:choose&gt;&lt;xsl:when test="contact/mfc2t_applogin"&gt;&lt;xsl:value-of select="contact/mfc2t_applogin" /&gt;&lt;/xsl:when&gt;&lt;xsl:otherwise&gt;&lt;/xsl:otherwise&gt;&lt;/xsl:choose&gt;&lt;![CDATA[&lt;/font&gt;&lt;/b&gt; &lt;/li&gt;&lt;li class=""&gt;&lt;font face=Arial&gt;Votre mot de passe temporaire:&lt;/font&gt;     &lt;b class=""&gt;&lt;font face="Courier New"&gt;]]&gt;&lt;xsl:choose&gt;&lt;xsl:when test="contact/mfc2t_temporarypassword"&gt;&lt;xsl:value-of select="contact/mfc2t_temporarypassword" /&gt;&lt;/xsl:when&gt;&lt;xsl:otherwise&gt;&lt;/xsl:otherwise&gt;&lt;/xsl:choose&gt;&lt;![CDATA[&lt;/font&gt;&lt;/b&gt; &lt;/li&gt;&lt;/ul&gt;&lt;font face=Arial&gt;&lt;br&gt;&lt;/font&gt;&lt;div class=""&gt;&lt;font face=Arial&gt;&lt;br&gt;&lt;/font&gt;Vous pouvez consulter les vidéos de formation et accéder aux guides utilisateurs sur le site :&amp;#160;&lt;a href="https://aka.ms/aidelog"&gt;https://aka.ms/doteo&lt;/a&gt;&lt;br&gt;&lt;/div&gt;&lt;div class=keyboardFocusClass&gt;&lt;span style="font-family:Arial;"&gt;Cordialement.&lt;/span&gt;&lt;p class=keyboardFocusClass&gt;&lt;font face=Arial&gt;Equipe d'administration Doteo&lt;/font&gt;&lt;/p&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;]]&gt;&lt;/xsl:template&gt;&lt;/xsl:stylesheet&gt;</body>
+        <title>Doteo: Merci de votre inscription DOTEO</title>
+        <presentationxml>&lt;template&gt;&lt;text&gt;&lt;![CDATA[&lt;p class=""&gt;&lt;font face=Arial&gt;Bonjour ]]&gt;&lt;/text&gt;&lt;slugs&gt;&lt;slug&gt;&lt;entity&gt;contact&lt;/entity&gt;&lt;attribute&gt;fullname&lt;/attribute&gt;&lt;/slug&gt;&lt;default&gt;&lt;/default&gt;&lt;/slugs&gt;&lt;text&gt;&lt;![CDATA[ ,&lt;/font&gt;&lt;/p&gt;
+&lt;p class=keyboardFocusClass&gt;&lt;font face=Arial&gt;Bienvenue sur l'application Doteo.&amp;#160;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=Arial&gt;Vous trouverez ci-dessous vos informations de connexion :&lt;/font&gt;&lt;/p&gt;&lt;ul class="RTE_list_style_position keyboardFocusClass"&gt;&lt;li class=""&gt;&lt;font face=Arial&gt;Lien de connexion:&lt;/font&gt;&amp;#160;&lt;font face=Arial&gt;&lt;b&gt;&lt;a href="https://aidelog01.crm4.dynamics.com/apps/aidelog"&gt;https://doteo.crm4.dynamics.com/apps/doteo&lt;/a&gt;&lt;/b&gt;&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font face=Arial&gt;Votre Login:&lt;/font&gt; &lt;b class=""&gt;&lt;font face="Courier New"&gt;]]&gt;&lt;/text&gt;&lt;slugs&gt;&lt;slug&gt;&lt;entity&gt;contact&lt;/entity&gt;&lt;attribute&gt;mfc2t_applogin&lt;/attribute&gt;&lt;/slug&gt;&lt;default&gt;&lt;/default&gt;&lt;/slugs&gt;&lt;text&gt;&lt;![CDATA[&lt;/font&gt;&lt;/b&gt; &lt;/li&gt;&lt;li class=""&gt;&lt;font face=Arial&gt;Votre mot de passe temporaire:&lt;/font&gt;     &lt;b class=""&gt;&lt;font face="Courier New"&gt;]]&gt;&lt;/text&gt;&lt;slugs&gt;&lt;slug&gt;&lt;entity&gt;contact&lt;/entity&gt;&lt;attribute&gt;mfc2t_temporarypassword&lt;/attribute&gt;&lt;/slug&gt;&lt;default&gt;&lt;/default&gt;&lt;/slugs&gt;&lt;text&gt;&lt;![CDATA[&lt;/font&gt;&lt;/b&gt; &lt;/li&gt;&lt;/ul&gt;&lt;font face=Arial&gt;&lt;br&gt;&lt;/font&gt;&lt;div class=""&gt;&lt;font face=Arial&gt;&lt;br&gt;&lt;/font&gt;Vous pouvez consulter les vidéos de formation et accéder aux guides utilisateurs sur le site :&amp;#160;&lt;a href="https://aka.ms/aidelog"&gt;https://aka.ms/doteo&lt;/a&gt;&lt;br&gt;&lt;/div&gt;&lt;div class=keyboardFocusClass&gt;&lt;span style="font-family:Arial;"&gt;Cordialement.&lt;/span&gt;&lt;p class=keyboardFocusClass&gt;&lt;font face=Arial&gt;Equipe d'administration Doteo&lt;/font&gt;&lt;/p&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;]]&gt;&lt;/text&gt;&lt;/template&gt;</presentationxml>
+        <languagecode>1036</languagecode>
+        <generationtypecode>0</generationtypecode>
+        <IntroducedVersion>5.0</IntroducedVersion>
+      </emailtemplate>
+      <emailtemplate>
+        <IsCustomizable>1</IsCustomizable>
+        <templateid>{f27b3246-fc7a-ea11-a811-000d3a2109c9}</templateid>
+        <subject>&lt;?xml version="1.0" ?&gt;&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"&gt;&lt;xsl:output method="text" indent="no"/&gt;&lt;xsl:template match="/data"&gt;&lt;![CDATA[Doteo Plateforme : Votre enregistrement]]&gt;&lt;/xsl:template&gt;&lt;/xsl:stylesheet&gt;</subject>
+        <subjectpresentationxml>&lt;template&gt;&lt;text&gt;&lt;![CDATA[Doteo Plateforme : Votre enregistrement]]&gt;&lt;/text&gt;&lt;/template&gt;</subjectpresentationxml>
+        <templatetypecode>2</templatetypecode>
+        <body>&lt;?xml version="1.0" ?&gt;&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"&gt;&lt;xsl:output method="text" indent="no"/&gt;&lt;xsl:template match="/data"&gt;&lt;![CDATA[&lt;div class=keyboardFocusClass&gt;&lt;p class=""&gt;&lt;font face=Arial&gt;Bonjour&amp;#160;]]&gt;&lt;xsl:choose&gt;&lt;xsl:when test="contact/fullname"&gt;&lt;xsl:value-of select="contact/fullname" /&gt;&lt;/xsl:when&gt;&lt;xsl:otherwise&gt;&lt;/xsl:otherwise&gt;&lt;/xsl:choose&gt;&lt;![CDATA[ ,&lt;/font&gt;&lt;/p&gt;&lt;p class=""&gt;&lt;font face=Arial&gt;Bienvenue sur l'application Doteo Plateforme.&amp;#160;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=Arial&gt;Vous trouverez ci-dessous vos informations de connexion :&lt;/font&gt;&lt;/p&gt;&lt;ul class="RTE_list_style_position keyboardFocusClass"&gt;&lt;li class=""&gt;&lt;font face=Arial&gt;Lien de connexion:&lt;/font&gt;&amp;#160;&lt;font face=Arial&gt;&lt;b&gt;&lt;/b&gt;&lt;/font&gt;&lt;font face="Calibri, Arial, Helvetica, sans-serif"&gt;&lt;span style="border-style:initial;font-stretch:inherit;font-size:16px;line-height:inherit;" class=keyboardFocusClass&gt;&lt;a href="https://aka.ms/aidelog-plateforme"&gt;https://aka.ms/doteo-plateforme&lt;/a&gt;&lt;/span&gt;&lt;/font&gt;&lt;span data-ogsb=white style="margin:0px;padding:0px;border:0px;font-stretch:inherit;font-size:16px;line-height:inherit;font-family:Calibri, Arial, Helvetica, sans-serif;vertical-align:baseline;"&gt;&amp;#160;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;font face=Arial&gt;Votre Login:&lt;/font&gt;&amp;#160;&lt;b class=""&gt;&lt;font face="Courier New" class=""&gt;]]&gt;&lt;xsl:choose&gt;&lt;xsl:when test="contact/mfc2t_applogin"&gt;&lt;xsl:value-of select="contact/mfc2t_applogin" /&gt;&lt;/xsl:when&gt;&lt;xsl:otherwise&gt;&lt;/xsl:otherwise&gt;&lt;/xsl:choose&gt;&lt;![CDATA[&lt;/font&gt;&lt;/b&gt;&lt;/li&gt;&lt;li class=""&gt;&lt;font face=Arial&gt;Votre mot de passe temporaire:&lt;/font&gt;&amp;#160; &lt;b class=""&gt;&lt;font face="Courier New"&gt;]]&gt;&lt;xsl:choose&gt;&lt;xsl:when test="contact/mfc2t_temporarypassword"&gt;&lt;xsl:value-of select="contact/mfc2t_temporarypassword" /&gt;&lt;/xsl:when&gt;&lt;xsl:otherwise&gt;&lt;/xsl:otherwise&gt;&lt;/xsl:choose&gt;&lt;![CDATA[&lt;/font&gt;&lt;/b&gt; &lt;/li&gt;&lt;/ul&gt;&lt;font face=Arial&gt;&lt;br&gt;&lt;/font&gt;Vous pouvez consulter les vidéos de formation et accéder aux guides utilisateurs sur le site : &lt;a href="https://aka.ms/aidelog"&gt;https://aka.ms/d&lt;/a&gt;oteo&lt;br&gt;&lt;/div&gt;&lt;div class=keyboardFocusClass&gt;&lt;span style="font-family:Arial;"&gt;Cordialement.&lt;/span&gt;&lt;p class=keyboardFocusClass&gt;&lt;font face=Arial&gt;Equipe d'administration Doteo&lt;/font&gt;&lt;/p&gt;&lt;p class=""&gt;&lt;br&gt;&lt;/p&gt;&lt;/div&gt;&lt;font face="Tahoma, Verdana, Arial" size=2 style="display:inline;"&gt;&lt;/font&gt;]]&gt;&lt;/xsl:template&gt;&lt;/xsl:stylesheet&gt;</body>
+        <title>Doteo: Merci de votre inscription PLATEFORME</title>
+        <presentationxml>&lt;template&gt;&lt;text&gt;&lt;![CDATA[&lt;div class=keyboardFocusClass&gt;&lt;p class=""&gt;&lt;font face=Arial&gt;Bonjour&amp;#160;]]&gt;&lt;/text&gt;&lt;slugs&gt;&lt;slug&gt;&lt;entity&gt;contact&lt;/entity&gt;&lt;attribute&gt;fullname&lt;/attribute&gt;&lt;/slug&gt;&lt;default&gt;&lt;/default&gt;&lt;/slugs&gt;&lt;text&gt;&lt;![CDATA[ ,&lt;/font&gt;&lt;/p&gt;&lt;p class=""&gt;&lt;font face=Arial&gt;Bienvenue sur l'application Doteo Plateforme.&amp;#160;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font face=Arial&gt;Vous trouverez ci-dessous vos informations de connexion :&lt;/font&gt;&lt;/p&gt;&lt;ul class="RTE_list_style_position keyboardFocusClass"&gt;&lt;li class=""&gt;&lt;font face=Arial&gt;Lien de connexion:&lt;/font&gt;&amp;#160;&lt;font face=Arial&gt;&lt;b&gt;&lt;/b&gt;&lt;/font&gt;&lt;font face="Calibri, Arial, Helvetica, sans-serif"&gt;&lt;span style="border-style:initial;font-stretch:inherit;font-size:16px;line-height:inherit;" class=keyboardFocusClass&gt;&lt;a href="https://aka.ms/aidelog-plateforme"&gt;https://aka.ms/doteo-plateforme&lt;/a&gt;&lt;/span&gt;&lt;/font&gt;&lt;span data-ogsb=white style="margin:0px;padding:0px;border:0px;font-stretch:inherit;font-size:16px;line-height:inherit;font-family:Calibri, Arial, Helvetica, sans-serif;vertical-align:baseline;"&gt;&amp;#160;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;font face=Arial&gt;Votre Login:&lt;/font&gt;&amp;#160;&lt;b class=""&gt;&lt;font face="Courier New" class=""&gt;]]&gt;&lt;/text&gt;&lt;slugs&gt;&lt;slug&gt;&lt;entity&gt;contact&lt;/entity&gt;&lt;attribute&gt;mfc2t_applogin&lt;/attribute&gt;&lt;/slug&gt;&lt;default&gt;&lt;/default&gt;&lt;/slugs&gt;&lt;text&gt;&lt;![CDATA[&lt;/font&gt;&lt;/b&gt;&lt;/li&gt;&lt;li class=""&gt;&lt;font face=Arial&gt;Votre mot de passe temporaire:&lt;/font&gt;&amp;#160; &lt;b class=""&gt;&lt;font face="Courier New"&gt;]]&gt;&lt;/text&gt;&lt;slugs&gt;&lt;slug&gt;&lt;entity&gt;contact&lt;/entity&gt;&lt;attribute&gt;mfc2t_temporarypassword&lt;/attribute&gt;&lt;/slug&gt;&lt;default&gt;&lt;/default&gt;&lt;/slugs&gt;&lt;text&gt;&lt;![CDATA[&lt;/font&gt;&lt;/b&gt; &lt;/li&gt;&lt;/ul&gt;&lt;font face=Arial&gt;&lt;br&gt;&lt;/font&gt;Vous pouvez consulter les vidéos de formation et accéder aux guides utilisateurs sur le site : &lt;a href="https://aka.ms/aidelog"&gt;https://aka.ms/d&lt;/a&gt;oteo&lt;br&gt;&lt;/div&gt;&lt;div class=keyboardFocusClass&gt;&lt;span style="font-family:Arial;"&gt;Cordialement.&lt;/span&gt;&lt;p class=keyboardFocusClass&gt;&lt;font face=Arial&gt;Equipe d'administration Doteo&lt;/font&gt;&lt;/p&gt;&lt;p class=""&gt;&lt;br&gt;&lt;/p&gt;&lt;/div&gt;&lt;font face="Tahoma, Verdana, Arial" size=2 style="display:inline;"&gt;&lt;/font&gt;]]&gt;&lt;/text&gt;&lt;/template&gt;</presentationxml>
+        <languagecode>1036</languagecode>
+        <generationtypecode>0</generationtypecode>
+        <IntroducedVersion>1.0</IntroducedVersion>
+      </emailtemplate>
+    </EmailTemplates>
+  </Templates>
+  <EntityMaps />
+  <EntityRelationships />
+  <OrganizationSettings />
+  <optionsets />
+  <CustomControls />
+  <EntityDataProviders />
+  <Languages>
+    <Language>1036</Language>
+  </Languages>
+</ImportExportXml>

@@ -1,0 +1,207 @@
+<ImportExportXml version="9.1.0.18945" SolutionPackageVersion="9.1" languagecode="1036" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SolutionManifest>
+    <UniqueName>LogAssistMdApp</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="LogAssist-MdApp" languagecode="1036" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.0.0.0</Version>
+    <Managed>0</Managed>
+    <Publisher>
+      <UniqueName>microsoftfrancecovidcrisisteam</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="Microsoft France Covid Crisis Team" languagecode="1036" />
+      </LocalizedNames>
+      <Descriptions />
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>mfc2t</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>96372</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1>0033664404562</Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="61" schemaName="mfc2t_logoratp" behavior="0" />
+      <RootComponent type="62" schemaName="mfc2t_Geloc" behavior="0" />
+      <RootComponent type="80" schemaName="mfc2t_Geloc" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required key="0" type="1" schemaName="mfc2t_calculationjob" displayName="Processus de calcul" solution="Active" />
+        <Dependent key="1" type="62" schemaName="mfc2t_Geloc" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="2" type="1" schemaName="mfc2t_deliverywaveline" displayName="Ligne Bénéficiaire" solution="Active" />
+        <Dependent key="1" type="62" schemaName="mfc2t_Geloc" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="3" type="1" schemaName="mfc2t_deliverywave" displayName="Vague de livraison" solution="Active" />
+        <Dependent key="1" type="62" schemaName="mfc2t_Geloc" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="4" type="1" schemaName="mfc2t_product" displayName="Produit" solution="Active" />
+        <Dependent key="1" type="62" schemaName="mfc2t_Geloc" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="5" type="1" schemaName="mfc2t_rule" displayName="Doctrine" solution="Active" />
+        <Dependent key="1" type="62" schemaName="mfc2t_Geloc" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="6" type="1" schemaName="mfc2t_deliverywavegroup" displayName="Ligne Plateforme" solution="Active" />
+        <Dependent key="1" type="62" schemaName="mfc2t_Geloc" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="7" type="61" schemaName="mfc2t_/Icons/Entities/City.svg" displayName="mfc2t_/Icons/Entities/City.svg" solution="Active" />
+        <Dependent key="1" type="62" schemaName="mfc2t_Geloc" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="8" type="61" schemaName="mfc2t_/Icons/Entities/PBI.svg" displayName="mfc2t_/Icons/Entities/PBI.svg" solution="Active" />
+        <Dependent key="1" type="62" schemaName="mfc2t_Geloc" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="6" type="1" schemaName="mfc2t_deliverywavegroup" displayName="Ligne Plateforme" solution="Active" />
+        <Dependent key="9" type="80" schemaName="mfc2t_Geloc" displayName="DOTEO" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="4" type="1" schemaName="mfc2t_product" displayName="Produit" solution="Active" />
+        <Dependent key="9" type="80" schemaName="mfc2t_Geloc" displayName="DOTEO" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="0" type="1" schemaName="mfc2t_calculationjob" displayName="Processus de calcul" solution="Active" />
+        <Dependent key="9" type="80" schemaName="mfc2t_Geloc" displayName="DOTEO" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="3" type="1" schemaName="mfc2t_deliverywave" displayName="Vague de livraison" solution="Active" />
+        <Dependent key="9" type="80" schemaName="mfc2t_Geloc" displayName="DOTEO" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="2" type="1" schemaName="mfc2t_deliverywaveline" displayName="Ligne Bénéficiaire" solution="Active" />
+        <Dependent key="9" type="80" schemaName="mfc2t_Geloc" displayName="DOTEO" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="10" type="1" schemaName="mfc2t_settings" displayName="Paramètre" solution="Active" />
+        <Dependent key="9" type="80" schemaName="mfc2t_Geloc" displayName="DOTEO" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="5" type="1" schemaName="mfc2t_rule" displayName="Doctrine" solution="Active" />
+        <Dependent key="9" type="80" schemaName="mfc2t_Geloc" displayName="DOTEO" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="11" type="20" displayName="Doteo - Administrateur local" solution="Active" id="{378923af-d671-ea11-a811-000d3a20f8d4}" />
+        <Dependent key="9" type="80" schemaName="mfc2t_Geloc" displayName="DOTEO" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="12" type="26" schemaName="0 - Lignes bénéficiaires ouvertes" displayName="0 - Lignes bénéficiaires ouvertes" parentSchemaName="mfc2t_deliverywaveline" parentDisplayName="Ligne Bénéficiaire" solution="Active" id="{c20d215f-17b0-4d19-ad1e-07f89b350bec}" />
+        <Dependent key="9" type="80" schemaName="mfc2t_Geloc" displayName="DOTEO" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="13" type="26" schemaName="2 - (Pour les plateformes) - Quantités à préparer" displayName="2 - (Pour les plateformes) - Quantités à préparer" parentSchemaName="mfc2t_deliverywaveline" parentDisplayName="Ligne Bénéficiaire" solution="Active" id="{d75ba00d-1671-ea11-a811-000d3a2109c9}" />
+        <Dependent key="9" type="80" schemaName="mfc2t_Geloc" displayName="DOTEO" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="14" type="26" schemaName="1 - Tous les bénéficiaires (actifs et inactifs)" displayName="1 - Tous les bénéficiaires (actifs et inactifs)" parentSchemaName="account" parentDisplayName="Bénéficiaire" solution="msdynce_AppCommon (9.0.4.0066)" id="{65ffaf9a-e8c5-432d-860b-32f841b00d87}" />
+        <Dependent key="9" type="80" schemaName="mfc2t_Geloc" displayName="DOTEO" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="15" type="26" schemaName="0 - Tous les bénéficiaires actifs" displayName="0 - Tous les bénéficiaires actifs" parentSchemaName="account" parentDisplayName="Bénéficiaire" solution="Active" id="{fcd0017d-8675-ea11-a811-000d3a20f3f8}" />
+        <Dependent key="9" type="80" schemaName="mfc2t_Geloc" displayName="DOTEO" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="16" type="26" schemaName="2 - Toutes les plateformes" displayName="2 - Toutes les plateformes" parentSchemaName="account" parentDisplayName="Bénéficiaire" solution="Active" id="{d46a9c29-96b1-ea11-a812-000d3a24e4ce}" />
+        <Dependent key="9" type="80" schemaName="mfc2t_Geloc" displayName="DOTEO" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="17" type="26" schemaName="1 - Historique - Toutes les lignes bénéficiaires" displayName="1 - Historique - Toutes les lignes bénéficiaires" parentSchemaName="mfc2t_deliverywaveline" parentDisplayName="Ligne Bénéficiaire" solution="Active" id="{5383d945-6f79-ea11-a811-000d3a20f8d4}" />
+        <Dependent key="9" type="80" schemaName="mfc2t_Geloc" displayName="DOTEO" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="18" type="60" displayName="carte de compte" parentDisplayName="Bénéficiaire" solution="msdynce_AppCommon (9.0.4.0066)" id="{b028db32-3619-48a5-ac51-cf3f947b0ef3}" />
+        <Dependent key="9" type="80" schemaName="mfc2t_Geloc" displayName="DOTEO" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="19" type="60" displayName="Formulaire de vignette de la hiérarchie du compte" parentDisplayName="Bénéficiaire" solution="msdynce_AppCommon (9.0.4.0066)" id="{69cff312-cfb6-4289-9631-249ab85d2c62}" />
+        <Dependent key="9" type="80" schemaName="mfc2t_Geloc" displayName="DOTEO" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="20" type="60" displayName="Profils sociaux" parentDisplayName="Bénéficiaire" solution="msdynce_AppCommon (9.0.4.0066)" id="{2205c86d-ed88-4a2f-a447-3b86a8781f2e}" />
+        <Dependent key="9" type="80" schemaName="mfc2t_Geloc" displayName="DOTEO" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="21" type="60" displayName="Volet de référence du compte" parentDisplayName="Bénéficiaire" solution="msdynce_AppCommon (9.0.4.0066)" id="{098ae145-1567-41ec-8398-86dbaac70c9b}" />
+        <Dependent key="9" type="80" schemaName="mfc2t_Geloc" displayName="DOTEO" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="22" type="60" displayName="Bénéficiaire" parentDisplayName="Bénéficiaire" solution="msdynce_AppCommon (9.0.4.0066)" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
+        <Dependent key="9" type="80" schemaName="mfc2t_Geloc" displayName="DOTEO" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="23" type="60" displayName="Création rapide de compte" parentDisplayName="Bénéficiaire" solution="msdynce_AppCommon (9.0.4.0066)" id="{c9e7ec2d-efca-4e4c-b3e3-f63c4bba5e4b}" />
+        <Dependent key="9" type="80" schemaName="mfc2t_Geloc" displayName="DOTEO" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="24" type="60" displayName="Bénéficiaires admin" parentDisplayName="Bénéficiaire" solution="Active" id="{40081708-a2a4-4c5f-b36a-a52e0c1f11c0}" />
+        <Dependent key="9" type="80" schemaName="mfc2t_Geloc" displayName="DOTEO" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="25" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
+        <Dependent key="9" type="80" schemaName="mfc2t_Geloc" displayName="DOTEO" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>

@@ -1,0 +1,205 @@
+<ImportExportXml version="9.1.0.18945" SolutionPackageVersion="9.1" languagecode="1036" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SolutionManifest>
+    <UniqueName>LogAssistProcess</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="LogAssist-Process" languagecode="1036" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.0.0.0</Version>
+    <Managed>0</Managed>
+    <Publisher>
+      <UniqueName>microsoftfrancecovidcrisisteam</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="Microsoft France Covid Crisis Team" languagecode="1036" />
+      </LocalizedNames>
+      <Descriptions />
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>mfc2t</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>96372</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1>0033664404562</Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="29" id="{2b9be21b-7942-42dd-a555-8042ce40d4b4}" behavior="0" />
+      <RootComponent type="29" id="{5726d256-3b71-ea11-a811-000d3a2109c9}" behavior="0" />
+      <RootComponent type="29" id="{6039793a-1174-ea11-a811-000d3a20ffa1}" behavior="0" />
+      <RootComponent type="29" id="{c4202d12-fe74-ea11-a811-000d3a20f3f8}" behavior="0" />
+      <RootComponent type="29" id="{ef263585-0772-ea11-a811-000d3a2109c9}" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required key="0" type="1" schemaName="mfc2t_rule" displayName="Doctrine" solution="Active" />
+        <Dependent key="1" type="29" displayName="Protéger les doctrines validées" id="{5726d256-3b71-ea11-a811-000d3a2109c9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="2" type="2" schemaName="mfc2t_codedumoteur" displayName="Code du Moteur" parentSchemaName="mfc2t_rule" parentDisplayName="Doctrine" solution="Active" />
+        <Dependent key="1" type="29" displayName="Protéger les doctrines validées" id="{5726d256-3b71-ea11-a811-000d3a2109c9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="3" type="2" schemaName="mfc2t_productid" displayName="Produit" parentSchemaName="mfc2t_rule" parentDisplayName="Doctrine" solution="Active" />
+        <Dependent key="1" type="29" displayName="Protéger les doctrines validées" id="{5726d256-3b71-ea11-a811-000d3a2109c9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="4" type="2" schemaName="statuscode" displayName="Raison du statut" parentSchemaName="mfc2t_rule" parentDisplayName="Doctrine" solution="Active" />
+        <Dependent key="1" type="29" displayName="Protéger les doctrines validées" id="{5726d256-3b71-ea11-a811-000d3a2109c9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="5" type="2" schemaName="mfc2t_rulefilter" displayName="Filtre" parentSchemaName="mfc2t_rule" parentDisplayName="Doctrine" solution="Active" />
+        <Dependent key="1" type="29" displayName="Protéger les doctrines validées" id="{5726d256-3b71-ea11-a811-000d3a2109c9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="6" type="2" schemaName="mfc2t_ruleid" displayName="Doctrine" parentSchemaName="mfc2t_rule" parentDisplayName="Doctrine" solution="Active" />
+        <Dependent key="1" type="29" displayName="Protéger les doctrines validées" id="{5726d256-3b71-ea11-a811-000d3a2109c9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="7" type="2" schemaName="mfc2t_ruleengine" displayName="Moteur de calcul  utilisé" parentSchemaName="mfc2t_rule" parentDisplayName="Doctrine" solution="Active" />
+        <Dependent key="1" type="29" displayName="Protéger les doctrines validées" id="{5726d256-3b71-ea11-a811-000d3a2109c9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="8" type="2" schemaName="mfc2t_name" displayName="Nom" parentSchemaName="mfc2t_rule" parentDisplayName="Doctrine" solution="Active" />
+        <Dependent key="1" type="29" displayName="Protéger les doctrines validées" id="{5726d256-3b71-ea11-a811-000d3a2109c9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="9" type="1" schemaName="mfc2t_incident" displayName="Ticket" solution="Active" />
+        <Dependent key="10" type="29" displayName="Unlock ticket fields if created from CRM" id="{6039793a-1174-ea11-a811-000d3a20ffa1}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="11" type="2" schemaName="mfc2t_phonenumber" displayName="Numéro de téléphone " parentSchemaName="mfc2t_incident" parentDisplayName="Ticket" solution="Active" />
+        <Dependent key="10" type="29" displayName="Unlock ticket fields if created from CRM" id="{6039793a-1174-ea11-a811-000d3a20ffa1}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="12" type="2" schemaName="mfc2t_description" displayName="Description" parentSchemaName="mfc2t_incident" parentDisplayName="Ticket" solution="Active" />
+        <Dependent key="10" type="29" displayName="Unlock ticket fields if created from CRM" id="{6039793a-1174-ea11-a811-000d3a20ffa1}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="13" type="2" schemaName="mfc2t_contactid" displayName="Contact" parentSchemaName="mfc2t_incident" parentDisplayName="Ticket" solution="Active" />
+        <Dependent key="10" type="29" displayName="Unlock ticket fields if created from CRM" id="{6039793a-1174-ea11-a811-000d3a20ffa1}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="14" type="2" schemaName="mfc2t_incidentid" displayName="Ticket" parentSchemaName="mfc2t_incident" parentDisplayName="Ticket" solution="Active" />
+        <Dependent key="10" type="29" displayName="Unlock ticket fields if created from CRM" id="{6039793a-1174-ea11-a811-000d3a20ffa1}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="15" type="2" schemaName="mfc2t_mailticketsender" displayName="Email" parentSchemaName="mfc2t_incident" parentDisplayName="Ticket" solution="Active" />
+        <Dependent key="10" type="29" displayName="Unlock ticket fields if created from CRM" id="{6039793a-1174-ea11-a811-000d3a20ffa1}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="16" type="2" schemaName="mfc2t_ticketsource" displayName="Source" parentSchemaName="mfc2t_incident" parentDisplayName="Ticket" solution="Active" />
+        <Dependent key="10" type="29" displayName="Unlock ticket fields if created from CRM" id="{6039793a-1174-ea11-a811-000d3a20ffa1}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="17" type="2" schemaName="mfc2t_name" displayName="Titre" parentSchemaName="mfc2t_incident" parentDisplayName="Ticket" solution="Active" />
+        <Dependent key="10" type="29" displayName="Unlock ticket fields if created from CRM" id="{6039793a-1174-ea11-a811-000d3a20ffa1}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="9" type="1" schemaName="mfc2t_incident" displayName="Ticket" solution="Active" />
+        <Dependent key="18" type="29" displayName="Empty owner for assigning ticket" id="{c4202d12-fe74-ea11-a811-000d3a20f3f8}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="17" type="2" schemaName="mfc2t_name" displayName="Titre" parentSchemaName="mfc2t_incident" parentDisplayName="Ticket" solution="Active" />
+        <Dependent key="18" type="29" displayName="Empty owner for assigning ticket" id="{c4202d12-fe74-ea11-a811-000d3a20f3f8}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="14" type="2" schemaName="mfc2t_incidentid" displayName="Ticket" parentSchemaName="mfc2t_incident" parentDisplayName="Ticket" solution="Active" />
+        <Dependent key="18" type="29" displayName="Empty owner for assigning ticket" id="{c4202d12-fe74-ea11-a811-000d3a20f3f8}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="19" type="2" schemaName="ownerid" displayName="Propriétaire" parentSchemaName="mfc2t_incident" parentDisplayName="Ticket" solution="Active" />
+        <Dependent key="18" type="29" displayName="Empty owner for assigning ticket" id="{c4202d12-fe74-ea11-a811-000d3a20f3f8}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="0" type="1" schemaName="mfc2t_rule" displayName="Doctrine" solution="Active" />
+        <Dependent key="20" type="29" displayName="Validation doctrine" id="{2b9be21b-7942-42dd-a555-8042ce40d4b4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="8" type="2" schemaName="mfc2t_name" displayName="Nom" parentSchemaName="mfc2t_rule" parentDisplayName="Doctrine" solution="Active" />
+        <Dependent key="20" type="29" displayName="Validation doctrine" id="{2b9be21b-7942-42dd-a555-8042ce40d4b4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="21" type="2" schemaName="mfc2t_approvedby" displayName="Approuvé par" parentSchemaName="mfc2t_rule" parentDisplayName="Doctrine" solution="Active" />
+        <Dependent key="20" type="29" displayName="Validation doctrine" id="{2b9be21b-7942-42dd-a555-8042ce40d4b4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="6" type="2" schemaName="mfc2t_ruleid" displayName="Doctrine" parentSchemaName="mfc2t_rule" parentDisplayName="Doctrine" solution="Active" />
+        <Dependent key="20" type="29" displayName="Validation doctrine" id="{2b9be21b-7942-42dd-a555-8042ce40d4b4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="4" type="2" schemaName="statuscode" displayName="Raison du statut" parentSchemaName="mfc2t_rule" parentDisplayName="Doctrine" solution="Active" />
+        <Dependent key="20" type="29" displayName="Validation doctrine" id="{2b9be21b-7942-42dd-a555-8042ce40d4b4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="22" type="2" schemaName="mfc2t_approvedon" displayName="Approuvé le" parentSchemaName="mfc2t_rule" parentDisplayName="Doctrine" solution="Active" />
+        <Dependent key="20" type="29" displayName="Validation doctrine" id="{2b9be21b-7942-42dd-a555-8042ce40d4b4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="23" type="2" schemaName="modifiedby" displayName="Modifié par" parentSchemaName="mfc2t_rule" parentDisplayName="Doctrine" solution="Active" />
+        <Dependent key="20" type="29" displayName="Validation doctrine" id="{2b9be21b-7942-42dd-a555-8042ce40d4b4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="24" type="2" schemaName="modifiedon" displayName="Modifié le" parentSchemaName="mfc2t_rule" parentDisplayName="Doctrine" solution="Active" />
+        <Dependent key="20" type="29" displayName="Validation doctrine" id="{2b9be21b-7942-42dd-a555-8042ce40d4b4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="25" type="2" schemaName="mfc2t_categorycode" displayName="Catégorie (code)" parentSchemaName="account" parentDisplayName="Bénéficiaire" solution="Active" />
+        <Dependent key="26" type="29" displayName="Empécher toute modification CP/Code Etablissement/Nom etablissement après chargement" id="{ef263585-0772-ea11-a811-000d3a2109c9}" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>

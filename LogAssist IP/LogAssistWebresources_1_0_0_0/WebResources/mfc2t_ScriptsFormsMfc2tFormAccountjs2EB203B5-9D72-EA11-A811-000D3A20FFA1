@@ -1,0 +1,27 @@
+if (typeof Mfc2t === "undefined") {
+    Mfc2t = { __namespace: true };
+}
+
+
+if (typeof Mfc2t.Form === "undefined") {
+    Mfc2t.Form = { __namespace: true };
+}
+
+Mfc2t.Form.Account = new (function () {
+
+    /// <summary>
+    ///  Execute on load of the Account entity forms
+    /// </summary>
+    this.OnLoad = function (executionContext) {
+        Mfc2t.Form.Account.SetPlatformDetailVisibility(executionContext);
+    };
+
+    this.SetPlatformDetailVisibility = function (executionContext) {
+        let formContext = executionContext.getFormContext();
+        let isplatform = formContext.getAttribute("mfc2t_isplatform").getValue();
+        //formContext.ui.tabs.get("tab_detail_plat_log").setVisible(isplatform);
+    }
+
+    return this;
+})();
+ 

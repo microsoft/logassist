@@ -1,0 +1,44 @@
+if (typeof Mfc2t === "undefined") {
+    Mfc2t = { __namespace: true };
+}
+
+if (typeof Mfc2t.Ribbon === "undefined") {
+    Mfc2t.Ribbon = { __namespace: true };
+}
+
+Mfc2t.Ribbon.Incident = new (function () {
+
+ /// <summary>
+ ///  Define if incident is escalated
+ /// </summary>
+
+    this.Escalated = {
+       Yes: true,
+       No: false,
+    };
+
+
+ /// <summary>
+ ///  Start the Escalation of the incident
+ /// </summary>
+    this.Escalation = function (executionContext) {
+
+        var confirmStrings = { text: "Etes-vous sûr de vouloir escalader ce ticket ?\n Ce dernier sera alors escaladé à l'équipe de développement.", title: "Confirmation", cancelButtonLabel: "Annuler", confirmButtonLabel: "Confirmer" };
+        var confirmOptions = { height: 200, width: 450 };
+        Xrm.Navigation.openConfirmDialog(confirmStrings, confirmOptions).then(
+            function (success) {
+                if (success.confirmed) {
+                    
+                    var EscalatedAttr = executionContext.getAttribute("mfc2t_ticketescalation");
+                    EscalatedAttr.setValue(Mfc2t.Ribbon.Incident.Escalated.Yes); 
+                    EscalatedAttr.setSubmitMode("always");
+
+                    var saveOptions = { saveMode: 1 };
+                    executionContext.data.save(saveOptions);
+                    
+
+                } else {
+                    // Do nothing
+                }
+            });
+    }});
